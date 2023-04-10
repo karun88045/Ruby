@@ -4,19 +4,19 @@
 
 
 class Gym
-	def no_of_test_cases
-		puts "Enter no_of_test_cases"
-		gets.chomp.to_i
+  def no_of_test_cases
+    puts "Enter no_of_test_cases"
+    gets.chomp.to_i
+  end
+  def user_input
+    puts "Enter No of X Sets:"
+    @x = gets.chomp.to_i
+  end
+  def output
+	no_of_test_cases.times do
+	  user_input()
+	  puts "Total no of Squats: #{@x * 15}"
 	end
-	def user_input
-		puts "Enter No of X Sets:"
-		@x = gets.chomp.to_i
-	end
-	def output
-		no_of_test_cases.times do
-			user_input()
-			puts "Total no of Squats: #{@x * 15}"
-		end
-	end
+  end
 end
 Gym.new.output()

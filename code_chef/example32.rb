@@ -16,16 +16,16 @@ class SolvingProblem
   def output()
     no_of_test_cases.times do
       user_input()
-       	c=@x*@y
+      c=@x*@y
     	if(c>=@z)
-	      	a=@z/@y
-	      	k=@y*a 
-	      	g=@z-k
-      	  	result=(a*@y*@y)+g*g
-      	  	puts(result)
+	      a=@z/@y
+	      k=@y*a 
+	      g=@z-k
+      	result=(a*@y*@y)+g*g
+      	puts(result)
     	else
-        	puts(@x*@y*@y)
-        end
+        puts(@x*@y*@y)
+      end
     end
   end
 end

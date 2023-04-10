@@ -1,4 +1,4 @@
-# There is an ATM machine. Initially, it contains a total of 
+  # There is an ATM machine. Initially, it contains a total of 
 # K units of money. N people (numbered 1 through N) want to withdraw money; for each valid i, 
 # the i-th person wants to withdraw A i ​ units of money.
 # The people come in and try to withdraw money one by one, in the increasing order of their indices. 

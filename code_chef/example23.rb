@@ -5,21 +5,21 @@
 
 
 class Test
-	def no_of_test_cases
-		puts "Enter no_of_test_cases"
-		gets.chomp.to_i
+  def no_of_test_cases
+    puts "Enter no_of_test_cases"
+    gets.chomp.to_i
+  end
+  def user_input
+    puts "Enter No of X questions and Y Problem_attempt:"
+    @x = gets.chomp.to_i
+    @n = gets.chomp.to_i
+  end
+  def output
+	no_of_test_cases.times do
+	  user_input()
+	  point = @x/10
+	  puts @n * point
 	end
-	def user_input
-		puts "Enter No of X questions and Y Problem_attempt:"
-		@x = gets.chomp.to_i
-		@n = gets.chomp.to_i
-	end
-	def output
-		no_of_test_cases.times do
-			user_input()
-			point = @x/10
-			puts @n * point
-		end
-	end
+  end
 end
 Test.new.output()

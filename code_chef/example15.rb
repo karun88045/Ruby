@@ -5,26 +5,26 @@
 
 
 class Cab
-	def no_of_test_cases
-		puts "Enter no_of_test_cases"
-		gets.chomp.to_i
+  def no_of_test_cases
+    puts "Enter no_of_test_cases"
+    gets.chomp.to_i
+  end
+  def user_input
+    puts "Enter No of X and Y rupees:"
+    @x = gets.chomp.to_i
+    @y = gets.chomp.to_i
+  end
+  def output
+    no_of_test_cases.times do
+	  user_input()
+	  if @x < @y
+        puts("FIRST")
+      elsif @x == @y
+        puts("BOTH")
+      else
+        puts("SECOND")
+      end
 	end
-	def user_input
-		puts "Enter No of X and Y rupees:"
-		@x = gets.chomp.to_i
-		@y = gets.chomp.to_i
-	end
-	def output
-		no_of_test_cases.times do
-			user_input()
-			if @x < @y
-        		puts("FIRST")
-    		elsif @x == @y
-        		puts("BOTH")
-        	else
-        		puts("SECOND")
-        	end
-		end
-	end
+  end
 end
 Cab.new.output()

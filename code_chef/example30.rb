@@ -5,23 +5,23 @@
 
 
 class Travel
-	def no_of_test_cases
-		puts "Enter no_of_test_cases"
-		gets.chomp.to_i
-	end
-	def user_input
-		puts "Enter x cars and y cars"
-		@x = gets.chomp.to_i
-		@y = gets.chomp.to_i
-	end
-	def output
-		no_of_test_cases.times do
-			user_input()
-			@x = @x * 5
-			@y = @y * 7
-			@z = @x + @y
-			puts @z
-		end
-	end
+  def no_of_test_cases
+    puts "Enter no_of_test_cases"
+    gets.chomp.to_i
+  end
+  def user_input
+    puts "Enter x cars and y cars"
+    @x = gets.chomp.to_i
+    @y = gets.chomp.to_i
+  end
+  def output
+    no_of_test_cases.times do
+	  user_input()
+	  @x = @x * 5
+	  @y = @y * 7
+	  @z = @x + @y
+	  puts @z
+    end
+  end
 end
 Travel.new.output()

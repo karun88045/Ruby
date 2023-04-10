@@ -9,27 +9,27 @@
 # {a,e,i,o,u} and the consonants are the other 21 characters.
 
 class Match_char
-	def no_of_test_cases
-		puts "Enter no_of_test_cases"
-		gets.chomp.to_i
-	end
-	def user_input
-		puts "Enter No of length of string:"
-		@n = gets.chomp.to_i
-		puts "Enter String:"
-		@s = gets.chomp
-	end
-	def output
-		no_of_test_cases.times do
-			user_input()
-			if @n == @s.size
-				if @s.include? "a e i o u"
-					puts "Yes"
-				else
-					puts "No"
-				end
-			end
+  def no_of_test_cases
+	puts "Enter no_of_test_cases"
+	gets.chomp.to_i
+  end
+  def user_input
+	puts "Enter No of length of string:"
+	@n = gets.chomp.to_i
+	puts "Enter String:"
+	@s = gets.chomp
+  end
+  def output
+	no_of_test_cases.times do
+	  user_input()
+	  if @n == @s.size
+		if @s.include? "a e i o u"
+		  puts "Yes"
+		else
+		  puts "No"
 		end
+	  end
 	end
+  end
 end
 Match_char.new.output()

@@ -20,7 +20,7 @@ class Scholarship
     no_of_test_cases.times do
     user_input
 		if(@r<=50)
-			puts("100")
+		  puts("100")
 		elsif(@r>50 && @r<=100)
 			puts("50")
 		else

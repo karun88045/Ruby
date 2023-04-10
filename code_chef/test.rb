@@ -1,4 +1,4 @@
-# class Dice 
+  # class Dice 
 #   def number_of_case
 #     gets.chomp.to_i 
 #   end
@@ -93,24 +93,24 @@
 
 
 def test_cases
-	puts "Enter no_of_test_cases:"
-	gets.chomp.to_i
+  puts "Enter no_of_test_cases:"
+  gets.chomp.to_i
 end
 def user_input
-    number =  gets.chomp.to_i
-    # number.split(" ")
+  number =  gets.chomp.to_i
+  # number.split(" ")
 end
 def result(array)
-     # array.map{ |a| a.to_i }.sum
-	user_input.map { |e| puts e+e  }
+  # array.map{ |a| a.to_i }.sum
+  user_input.map { |e| puts e+e  }
 end
 def output
-    t  =  test_cases
-    t.times do
-      a = user_input
-      result(a)
-    end
+  t  =  test_cases
+  t.times do
+    a = user_input
+    result(a)
   end
+end
 output()
 
 

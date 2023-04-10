@@ -15,10 +15,9 @@ class Guest
   end
   def output
     no_of_test_cases.times do
-    user_input
-    	
+    user_input	
 		if @n <= @d && @n <= @b 
-			puts "Yes"
+		  puts "Yes"
 		else
 			puts "No"
 		end
